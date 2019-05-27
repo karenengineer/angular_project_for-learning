@@ -9,7 +9,7 @@ import { ShoppingListService } from './shopping-list.service';
   styleUrls: ['./shopping-list.component.css']
 })
 export class ShoppingListComponent implements OnInit {
-  ingredients: Ingredient[] = [];
+  ingredients: Ingredient[];
 
   constructor(private slService: ShoppingListService) { }
 
@@ -20,6 +20,6 @@ export class ShoppingListComponent implements OnInit {
         (ingredients: Ingredient[]) => {
           this.ingredients = ingredients;
         }
-      )
+      );
   }
 }
